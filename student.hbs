@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Students</title>
+</head>
+<body>
+  <h1>Students</h1>
+  {{#if students}}
+    <table>
+      <thead>
+        <tr>
+          <th>Student Number</th>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Email</th>
+          <th>Address</th>
+          <th>Status</th>
+          <th>Course</th>
+        </tr>
+      </thead>
+      <tbody>
+        {{#each students}}
+          <tr>
+            <td>{{this.studentNum}}</td>
+            <td>{{this.firstName}}</td>
+            <td>{{this.lastName}}</td>
+            <td>{{this.email}}</td>
+            <td>{{this.addressStreet}}, {{this.addressCity}}, {{this.addressProvince}}</td>
+            <td>{{this.status}}</td>
+            <td>{{this.course}}</td>
+          </tr>
+        {{/each}}
+      </tbody>
+    </table>
+  {{else}}
+    <p>{{message}}</p>
+  {{/if}}
+</body>
+</html>

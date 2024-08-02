@@ -1,0 +1,28 @@
+{
+  "name": "web-assign-3",
+  "version": "1.0.0",
+  "description": "This is assignment 3 package",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Oki-bot-i/WEB_700.git"
+  },
+  "author": "Dea Guxholli",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Oki-bot-i/WEB_700/issues"
+  },
+  "homepage": "https://github.com/Oki-bot-i/WEB_700#readme",
+  "dependencies": {
+    "express": "^4.19.2",
+    "express-handlebars": "^7.1.3",
+    "mongoose": "^8.5.2",
+    "pg": "^8.12.0",
+    "pg-hstore": "^2.3.4",
+    "sequelize": "^6.37.3"
+  }
+}
